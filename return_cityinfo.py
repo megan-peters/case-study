@@ -2,7 +2,7 @@ import pymysql
 
 city = input("City: ")
 
-mydb = pymysql.connect('gpdw.inmz.net','megan','MeeNgie9','tmp')
+mydb = pymysql.connect('gpdw.inmz.net','megan','********','tmp')
 
 cursor = mydb.cursor()
 
