@@ -13,8 +13,7 @@ with open('regions.csv') as mycsv:
         count+=1
         if count == 1:
             continue
-
-
+            
         query = """INSERT INTO  Regions(id, country_id, name, iso_code)
                    VALUES (%s, %s, %s, %s)"""
             
@@ -22,4 +21,3 @@ with open('regions.csv') as mycsv:
 
 mydb.commit()
 mydb.close()
-
