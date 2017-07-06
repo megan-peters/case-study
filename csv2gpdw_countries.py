@@ -14,7 +14,6 @@ with open('countries.csv') as mycsv:
         if count == 1:
             continue
 
-
         query = """INSERT INTO  Countries(id, alpha2, alpha3, name, targetable)
                    VALUES (%s, %s, %s, %s,%s)"""
             
